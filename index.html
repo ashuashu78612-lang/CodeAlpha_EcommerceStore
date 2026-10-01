@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ShopEasy - E-commerce Store</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <div class="nav">
+    <h1>ShopEasy</h1>
+    <div>
+      <button onclick="showSection('home')">Home</button>
+      <button onclick="showSection('cart')">Cart (<span id="cartCount">0</span>)</button>
+      <button onclick="showSection('orders')">Orders</button>
+      <button onclick="showSection('login')">Login</button>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section id="home" class="section">
+    <div class="hero">
+      <div>
+        <h2>Simple. Smart. Shopping.</h2>
+        <p>Explore products and place your order easily.</p>
+      </div>
+    </div>
+    <h2>Products</h2>
+    <div id="products" class="grid"></div>
+  </section>
+
+  <section id="cart" class="section hidden">
+    <h2>Shopping Cart</h2>
+    <div id="cartItems"></div>
+    <div class="cart-total">Total: ₹<span id="cartTotal">0</span></div>
+    <button class="primary" onclick="checkout()">Place Order</button>
+  </section>
+
+  <section id="login" class="section hidden">
+    <div class="auth-box">
+      <h2>Login / Register</h2>
+      <input id="name" placeholder="Name (for registration)">
+      <input id="email" type="email" placeholder="Email">
+      <input id="password" type="password" placeholder="Password">
+      <button class="primary" onclick="login()">Login</button>
+      <button onclick="register()">Create Account</button>
+      <p id="authMessage"></p>
+    </div>
+  </section>
+
+  <section id="orders" class="section hidden">
+    <h2>My Orders</h2>
+    <div id="ordersList"></div>
+  </section>
+</main>
+
+<div id="toast"></div>
+<script src="app.js"></script>
+</body>
+</html>
