@@ -1,32 +1,40 @@
 # CodeAlpha E-commerce Store
 
-## Technologies
-- HTML
-- CSS
+## Project Description
+
+The E-Commerce Store is a full-stack web application designed to provide a simple online shopping experience.
+
+The application includes a user-friendly frontend for browsing products and interacting with the store. It uses JavaScript for frontend functionality, Express.js for the backend, and MongoDB for storing application data.
+
+## Technologies Used
+
+- HTML5
+- CSS3
 - JavaScript
 - Node.js
 - Express.js
 - MongoDB
-- JWT authentication
+- Git & GitHub
 
 ## Features
-- Product listings
-- Shopping cart
-- Product information
-- User registration/login
-- Order processing
-- Order history
-- MongoDB database
 
-## Run
-1. Install Node.js and MongoDB.
-2. Open this folder in VS Code.
-3. Run:
-   `npm install`
-4. Copy `.env.example` to `.env`.
-5. Start MongoDB.
-6. Run:
-   `npm start`
-7. Open `http://localhost:5000`
+- Product browsing
+- Interactive user interface
+- Product information display
+- Backend API using Express.js
+- MongoDB database integration
+- CRUD operations
+- Responsive web interface
 
-Demo products are automatically inserted when the product collection is empty.
+## Project Structure
+
+CodeAlpha_EcommerceStore/
+│
+├── index.html
+├── style.css
+├── app.js
+├── server.js
+├── package.json
+├── .env.example
+├── .gitignore
+├── README.md
