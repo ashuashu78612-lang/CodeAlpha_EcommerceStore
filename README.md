@@ -28,6 +28,7 @@ The application includes a user-friendly frontend for browsing products and inte
 
 ## Project Structure
 
+```text
 CodeAlpha_EcommerceStore/
 │
 ├── index.html
